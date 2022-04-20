@@ -1,0 +1,78 @@
+#profil {
+  background-color: #9dd3a1;
+}
+.jumbotron {
+  padding-top: 2rem;
+}
+
+.diary {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.diary h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#kolom {
+  text-align: justify;
+}
+
+.judulr {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.riwayat {
+  padding-top: 3rem;
+  background-color: #9dd3a1;
+  padding-bottom: 6rem;
+}
+
+.riwayat h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#kolom2 {
+  padding-top: 1rem;
+}
+.karya .container {
+  width: 700px;
+  height: auto;
+  margin: auto;
+  border: 1px solid;
+  border-color: black;
+  padding-top: 2rem;
+  background-color: #9dd3a1;
+  padding-bottom: 2rem;
+}
+
+.karya ul {
+  text-align: justify;
+}
+
+#hasil {
+  background-color: #9dd3a1;
+}
+
+.karya h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#kontak h2 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 3rem;
+}
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#proyek {
+  margin-left: 15rem;
+}
+
+#web {
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
