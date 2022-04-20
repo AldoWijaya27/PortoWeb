@@ -190,16 +190,17 @@
           </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
+            <form name="porto">
             <div class="mb-3">
-              <label for="validationcustom01" class="form-label"><b>Nama lengkap</b></label>
-                <input type="text" class="form-control">
+              <label for="validationcustom01" class="form-label"><b>Nama Lengkap</b></label>
+                <input type="text" class="form-control" name="nama">
            <div class="mb-3">
              <label for="email" class="form-label"><b>Email</b></label>
-               <input type="email" class="form-control" id="email" >
+               <input type="email" class="form-control" id="email" name="email" >
            </div>
            <div class="mb-3">
               <label for="pesan" class="form-label"><b>Pesan</b></label>
-                <textarea class="form-control" id="pesan" rows="6"></textarea>
+                <textarea class="form-control" id="pesan" rows="6" name="pesan"></textarea>
            </div> 
   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
    <div class="modal-dialog modal-dialog-centered">
@@ -237,7 +238,7 @@
     </div>
       </div>
     </div>
-    </
+  </form>
   <!-- Akhir contact -->
 
   <!-- footer -->
@@ -271,6 +272,19 @@
 <script>
   gsap.from('.jumbotron img', {duration: 2, rotateY:360, opacity: 0});
   gsap.from('.navbar', {duration: 2, y:-100, opacity: 0, ease: 'bounce'});
+</script>
+
+<!--Kontak google sheet-->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzq9PFfXQ_IJ0gj5UzrQ40Zswtg47WS29TOqok54TsQVibIt2lVjYtw3U3SyRUTXsli/exec'
+  const form = document.forms['porto']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
   </body>
 </html>
