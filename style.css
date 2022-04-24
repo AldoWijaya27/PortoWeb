@@ -36,9 +36,6 @@
   padding-top: 1rem;
 }
 .karya .container {
-  width: 700px;
-  height: auto;
-  margin: auto;
   border: 1px solid;
   border-color: black;
   padding-top: 2rem;
@@ -75,4 +72,5 @@
 #web {
   padding-top: 5rem;
   padding-bottom: 7rem;
+  background-color: #9dd3a1;
 }
