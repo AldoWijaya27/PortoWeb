@@ -1,6 +1,11 @@
 #profil {
   background-color: #9dd3a1;
 }
+
+.navbar-brand {
+  font-family: "pacifico";
+}
+
 .jumbotron {
   padding-top: 2rem;
 }
