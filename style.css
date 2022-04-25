@@ -62,7 +62,8 @@
   display: inline;
   font-weight: bold;
 }
-#hasil {
+
+.karya {
   background-color: #9dd3a1;
 }
 
@@ -76,12 +77,15 @@
   padding-bottom: 1rem;
 }
 
-#proyek {
-  margin-left: 15rem;
-}
-
 #web {
   padding-top: 5rem;
   padding-bottom: 7rem;
   background-color: #9dd3a1;
+}
+
+.web h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1em;
 }
